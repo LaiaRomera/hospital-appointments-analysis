@@ -147,10 +147,9 @@ Some of the analyses performed include:
 
 
 ## Technologies
-PostgreSQL
-DBeaver
-SQL
-Author
+- PostgreSQL
+- DBeaver
+- SQL
 
 
 ## Project Walkthrough
