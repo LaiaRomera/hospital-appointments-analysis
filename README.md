@@ -147,10 +147,9 @@ Some of the analyses performed include:
 
 
 ## Technologies
-PostgreSQL
-DBeaver
-SQL
-Author
+- PostgreSQL
+- DBeaver
+- SQL
 
 
 ## Project Walkthrough
@@ -166,4 +165,4 @@ This project includes a video presentation explaining:
 - Advanced SQL features used
 
 Video:
-[Watch the Loom presentation](https://www.loom.com/share/b323417e32ed4b6d80650408cf23b7b0)
+[Watch the Loom presentation](TU_ENLACE_AQUI)
