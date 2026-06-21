@@ -9,15 +9,16 @@ This project simulates a hospital appointment management system using a dimensio
 
 ## Database Structure
 
+```text
 hospital-appointments-analysis/
 │
 ├── README.md
 │
 ├── sql/
-    ├── 01_schema.sql
-    ├── 02_data.sql
-    └── 03_eda.sql
-
+│   ├── 01_schema.sql
+│   ├── 02_data.sql
+│   └── 03_eda.sql
+```
 
 The database follows a star schema design:
 
