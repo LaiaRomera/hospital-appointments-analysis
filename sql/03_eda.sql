@@ -101,12 +101,7 @@ WHERE consultation_fee < 0
 
 
 
--- This safely updates missing insurance values if they exist.
-BEGIN;
-UPDATE dim_patients
-SET insurance_type = 'None'
-WHERE insurance_type IS NULL;
-COMMIT;
+
 
 
 -- This demonstrates how to safely test a deletion.
@@ -124,6 +119,13 @@ ROLLBACK;
 -- ============================================================
 -- 2. DATA CLEANING
 -- ============================================================
+
+-- This safely updates missing insurance values if they exist.
+BEGIN;
+UPDATE dim_patients
+SET insurance_type = 'None'
+WHERE insurance_type IS NULL;
+COMMIT;
 
 -- Remove leading spaces from hospital city names.
 BEGIN;
@@ -410,4 +412,4 @@ ORDER BY avg_revenue_per_appointment DESC;
 -- Insight 12:
 -- Revenues of each doctor searched by their ID
 -- ============================================================
-SELECT get_doctor_revenue(1) AS doctor_revenue;
+SELECT get_doctor_revenue(2) AS doctor_revenue;

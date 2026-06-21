@@ -17,12 +17,15 @@
 -- Drop existing tables to allow the script to be executed from scratch.
 -- Fact tables are dropped first because they depend on dimension tables.
 
-DROP TABLE IF EXISTS fact_appointments;
-DROP TABLE IF EXISTS dim_doctors;
-DROP TABLE IF EXISTS dim_patients;
-DROP TABLE IF EXISTS dim_dates;
-DROP TABLE IF EXISTS dim_hospitals;
-DROP TABLE IF EXISTS dim_specialties;
+
+
+DROP TABLE IF EXISTS fact_appointments CASCADE;
+DROP TABLE IF EXISTS dim_dates CASCADE;
+DROP TABLE IF EXISTS dim_hospitals CASCADE;
+DROP TABLE IF EXISTS dim_specialties CASCADE;
+DROP TABLE IF EXISTS dim_patients CASCADE;
+DROP TABLE IF EXISTS dim_doctors CASCADE;
+
 
 -- ============================================================
 -- 1. DIMENSION TABLES
