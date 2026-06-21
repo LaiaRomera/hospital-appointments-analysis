@@ -9,7 +9,7 @@ This project simulates a hospital appointment management system using a dimensio
 
 ## Database Structure
 
-```text
+```
 hospital-appointments-analysis/
 │
 ├── README.md
